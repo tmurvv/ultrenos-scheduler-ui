@@ -25,6 +25,7 @@
   ],
   "family": "sample-fargate",
   "networkMode": "awsvpc",
+  "executionRoleArn": "arn:aws:iam::992382475320:role/ecsTaskExecutionRole",
   "revision": 1,
   "volumes": [],
   "status": "ACTIVE",
