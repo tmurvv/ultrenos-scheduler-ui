@@ -5,7 +5,7 @@ FROM node:16-alpine
 WORKDIR /app
 
 # Copy package.json and package-lock.json (if available)
-COPY package*.json ./
+COPY package*.json .
 
 # Install dependencies
 RUN npm install
@@ -14,10 +14,10 @@ RUN npm install
 COPY . .
 
 # Build the React app
-RUN npm run build
+#RUN npm run build
 
 # Expose the port on which the app will run (adjust if needed)
-EXPOSE 3000
+#EXPOSE 4173
 
 # Start the app
-CMD ["npm", "run", "preview"]
+CMD ["npm", "run", "dev"]
